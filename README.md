@@ -6,7 +6,7 @@ Este projeto é uma aplicação web interativa que exibe informações detalhada
 
 ## Tecnologias utilizadas
 
-[![My Skills](https://skillicons.dev/icons?i=html,css,javascript,react)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,javascript,react,nodejs,npm)](https://skillicons.dev)
 
 ## Funcionalidades
 
