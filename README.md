@@ -43,3 +43,8 @@ npm run dev
 
 Isso iniciará o servidor de desenvolvimento, configurado para rodar com o script dev, e abrirá seu navegador padrão em http://localhost:3000, ou na porta especificada no seu arquivo de configuração.
 
+## Licença 
+
+Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais detalhes.
+
+
