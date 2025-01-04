@@ -31,9 +31,7 @@ export function Application() {
       } catch (error) {
         console.error("Erro ao buscar dados da API:", error);
       } finally {
-        setTimeout(() => { // Adiciona um delay antes de desativar o loader
-          setIsLoader(false);
-        }, 3000); // 3000ms = 3 segundos de delay
+        setIsLoader(false); // Desativa o loader imediatamente após completar a requisição
       }
     };
     
