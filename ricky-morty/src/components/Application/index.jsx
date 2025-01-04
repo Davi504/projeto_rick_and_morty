@@ -48,19 +48,18 @@ export function Application() {
         <ContentCharacters>
           <div>
             {
-              characters && characters.map(({image, name, species, genre}) => {
-                return (
-                  <CardCharacter
-                    image={image}
-                    name={name}
-                    genre={species}
-                    specie={genre}
-                  />
-                )
-              }) 
-            }
-
-          </div>
+    characters && characters.map(({image, name, species, gender}) => {
+      return (
+        <CardCharacter
+          image={image}
+          name={name}
+          genre={gender} // Corrigido: deveria ser "gender" em vez de "species"
+          specie={species} // Corrigido: deveria ser "species" em vez de "genre"
+        />
+      )
+    })
+  }
+</div>
           {
             (!(page === countPages)) && <button onClick={() => setPage(page + 1)}>Carregar mais</button>
           }
