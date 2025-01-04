@@ -20,14 +20,24 @@ export function Application() {
   const [isLoader, setIsLoader] = useState(true);
 
   useEffect(() => {
-    axios.get(`https://rickandmortyapi.com/api/character?page=${page}`)
-      .then(response => {
+    const fetchData = async () => {
+      setIsLoader(true); // Ativa o loader antes de fazer a requisição
+      try {
+        const response = await axios.get(`https://rickandmortyapi.com/api/character?page=${page}`);
         const array = [...characters, ...response.data.results];
         setCharacters(array);
         setCountPages(response.data.info.pages);
         setQtdCharacters(response.data.info.count);
-        setIsLoader(false);
-      });
+      } catch (error) {
+        console.error("Erro ao buscar dados da API:", error);
+      } finally {
+        setTimeout(() => { // Adiciona um delay antes de desativar o loader
+          setIsLoader(false);
+        }, 3000); // 3000ms = 3 segundos de delay
+      }
+    };
+    
+    fetchData();
   }, [page]);
 
   return (
