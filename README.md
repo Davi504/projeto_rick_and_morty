@@ -3,6 +3,11 @@
 ## Descrição
 Este projeto é uma aplicação web interativa que exibe informações detalhadas sobre os personagens da popular série de TV "Rick and Morty". A aplicação consome dados da API pública de Rick and Morty e utiliza tecnologias modernas como HTML5, Javascript e React para proporcionar uma experiência de usuário dinâmica e responsiva. O objetivo é criar uma plataforma onde os fãs possam explorar e descobrir informações sobre seus personagens favoritos de forma intuitiva e atraente.
 
+## Link da aplicação rodando
+
+[Link do video](https://youtu.be/yRZ6b47O1cg?si=HlXCJfzvIoRaawkp)
+
+
 ### Objetivo
 O principal objetivo deste projeto é oferecer uma plataforma visual e intuitiva para os fãs da série "Rick and Morty". Queremos permitir que os usuários possam explorar facilmente as informações dos personagens, conhecendo detalhes e curiosidades de forma prática e divertida.
 
